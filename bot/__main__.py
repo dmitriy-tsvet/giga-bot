@@ -3,13 +3,9 @@ import logging
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.fsm.storage.memory import MemoryStorage
-from aiogram.enums import ParseMode
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from bot import middlewares, handlers, filters
 from bot import config
-from bot.services import commands_setter, admin_notificator, logger
-import database
-import boto3
+from bot.services import logger
 
 
 async def main():
